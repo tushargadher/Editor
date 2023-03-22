@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/logo.png">
+    <title>Free Photo Editor online</title>
+</head>
+
+<form>
+
+
+
+
+    <div class="container">
+
+        <div class="imageUpload">
+            <!-- <label for="InputFile">Upload with label</label> -->
+            <input type="file" id="InputFile" accept="image/*" hidden>
+            <span><i class='bx bxs-cloud-upload uploadIcon'></i> </span>
+            <span>Click to upload image</span>
+            <img src="" alt="" id="UploadedImg">
+        </div>
+
+        <div class="editor">
+            <div class="controls">
+                <span class="controlsName">
+                    Brightness
+                    <input type="text" id="brithnessValue" class="rangeValue" readonly>
+                </span>
+                <span class="controlsRange">
+                    <input type="range" min="-100" max="100" value="0" class="slider" id="brithness">
+                </span>
+            </div>
+            <div class="controls">
+                <span class="controlsName">
+                    Contrast
+                    <input type="text" id="contrastValue" class="rangeValue" readonly>
+                </span>
+                <span class="controlsRange">
+                    <input type="range" min="-100" max="100" value="0" class="slider" id="contrast">
+                </span>
+            </div>
+            <div class="controls">
+                <span class="controlsName">
+                    Saturation
+                    <input type="text" id="saturationValue" class="rangeValue" readonly>
+                </span>
+                <span class="controlsRange">
+                    <input type="range" min="0" max="200" value="100" class="slider" id="saturation">
+
+                </span>
+            </div>
+            <div class="controls">
+                <span class="controlsName">
+                    Warmth
+                    <input type="text" id="warmthValue" class="rangeValue" readonly>
+                </span>
+                <span class="controlsRange">
+                    <input type="range" min="0" max="200" value="100" class="slider" id="warmth">
+
+                </span>
+            </div>
+            <div class="btns">
+                <button id="resetBtn" class="Btn">Reset</button>
+                <button id="saveBtn" class="Btn">Save Image</button>
+            </div>
+            <!-- brithness
+            contrast
+            saturation
+            warmth == sepia -->
+            <!-- <input type="range" min="0" max="100" class="slider">
+            <input type="range" min="0" max="100" class="slider">
+            <input type="range" min="0" max="100" class="slider">
+            <input type="range" min="0" max="100" class="slider"> -->
+        </div>
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+
+</html>
